@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diabetes Prediction System</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    <div class="header">
+        <h1>DIABETES <span>PREDICTION SYSTEM</span></h1>
+        <p>Machine Learning Based Health Risk Detection</p>
+    </div>
+
+    <div class="card">
+        <form action="{{ url_for('predict') }}" method="post" id="predictForm">
+
+            <input type="number" step="any" name="Glucose" placeholder="Glucose Level"
+                   value="{{ glucose if glucose is defined else '' }}" required>
+
+            <input type="number" step="any" name="Insulin" placeholder="Insulin Level"
+                   value="{{ insulin if insulin is defined else '' }}" required>
+
+            <input type="number" step="any" name="BMI" placeholder="Body Mass Index (BMI)"
+                   value="{{ bmi if bmi is defined else '' }}" required>
+
+            <input type="number" step="any" name="Age" placeholder="Age"
+                   value="{{ age if age is defined else '' }}" required>
+
+            <button type="submit">CHECK DIABETES</button>
+            <button type="button" class="clear-btn" onclick="clearForm()">CLEAR</button>
+        </form>
+
+        {% if prediction_text %}
+        <div class="result-box">
+            {{ prediction_text }}
+        </div>
+        {% endif %}
+    </div>
+
+</div>
+
+<footer>
+    © 2025 Diabetes Prediction System | Developed by
+    <b>Hirak Modak</b>, <b>Jit Maji</b>, <b>Sudipta Dey</b>
+</footer>
+
+<script>
+function clearForm() {
+    document.getElementById("predictForm").reset();
+    window.location.href = "/";
+}
+</script>
+
+</body>
+</html>

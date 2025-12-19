@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Background */
+body {
+    min-height: 100vh;
+    background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+/* Main Wrapper */
+.main-wrapper {
+    text-align: center;
+    width: 100%;
+}
+
+/* Header */
+.header h1 {
+    font-size: 48px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #00e5ff;
+}
+
+.header h1 span {
+    color: #ffffff;
+}
+
+.header p {
+    margin-top: 10px;
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+/* Card */
+.card {
+    background: #ffffff;
+    width: 360px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+    color: #333;
+}
+
+/* Inputs */
+input {
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #00bcd4;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 15px;
+    background: linear-gradient(90deg, #00bcd4, #2196f3);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 188, 212, 0.6);
+}
+
+/* Output */
+.output {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f1f1f1;
+    border-left: 6px solid #00bcd4;
+    font-size: 14px;
+    border-radius: 6px;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    font-size: 13px;
+    opacity: 0.85;
+}
