@@ -1,104 +1,62 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-}
-
-/* Background */
 body {
-    min-height: 100vh;
-    background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #ffffff;
-}
-
-/* Main Wrapper */
-.main-wrapper {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f1f1f1;
     text-align: center;
-    width: 100%;
 }
 
-/* Header */
+.wrapper {
+    margin: 50px auto;
+    width: 400px;
+}
+
 .header h1 {
-    font-size: 48px;
-    font-weight: 800;
-    letter-spacing: 2px;
-    color: #00e5ff;
-}
-
-.header h1 span {
-    color: #ffffff;
-}
-
-.header p {
-    margin-top: 10px;
-    font-size: 16px;
-    opacity: 0.9;
-}
-
-/* Card */
-.card {
-    background: #ffffff;
-    width: 360px;
-    margin: 40px auto;
-    padding: 30px;
-    border-radius: 16px;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+    font-size: 28px;
     color: #333;
 }
 
-/* Inputs */
+.header span {
+    color: #4CAF50;
+}
+
+.card {
+    background-color: #fff;
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
 input {
-    width: 100%;
-    padding: 14px;
+    width: 80%;
+    padding: 10px;
     margin: 10px 0;
-    border: 2px solid #ddd;
-    border-radius: 8px;
-    font-size: 14px;
-    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
 }
 
-input:focus {
-    border-color: #00bcd4;
-}
-
-/* Button */
 button {
-    width: 100%;
-    padding: 14px;
-    margin-top: 15px;
-    background: linear-gradient(90deg, #00bcd4, #2196f3);
+    padding: 10px 20px;
+    border-radius: 5px;
     border: none;
-    border-radius: 8px;
+    background-color: #4CAF50;
     color: white;
-    font-size: 15px;
-    font-weight: 600;
     cursor: pointer;
-    transition: 0.3s;
+    margin: 5px;
 }
 
 button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(0, 188, 212, 0.6);
+    background-color: #45a049;
 }
 
-/* Output */
-.output {
-    margin-top: 20px;
-    padding: 15px;
-    background: #f1f1f1;
-    border-left: 6px solid #00bcd4;
-    font-size: 14px;
-    border-radius: 6px;
+.result-box {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #333;
 }
 
-/* Footer */
 footer {
-    margin-top: 20px;
-    font-size: 13px;
-    opacity: 0.85;
+    margin-top: 40px;
+    font-size: 14px;
+    color: #666;
 }
+
