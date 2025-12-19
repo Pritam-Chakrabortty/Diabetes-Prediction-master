@@ -3,15 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Diabetes Prediction System</title>
-
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 
 <body>
-
 <div class="wrapper">
-
     <div class="header">
         <h1>DIABETES <span>PREDICTION SYSTEM</span></h1>
         <p>Machine Learning Based Health Risk Detection</p>
@@ -19,7 +16,6 @@
 
     <div class="card">
         <form action="{{ url_for('predict') }}" method="post" id="predictForm">
-
             <input type="number" step="any" name="Glucose" placeholder="Glucose Level"
                    value="{{ glucose if glucose is defined else '' }}" required>
 
@@ -42,7 +38,6 @@
         </div>
         {% endif %}
     </div>
-
 </div>
 
 <footer>
@@ -56,6 +51,5 @@ function clearForm() {
     window.location.href = "/";
 }
 </script>
-
 </body>
 </html>
